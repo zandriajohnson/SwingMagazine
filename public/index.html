@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head lang="en">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+  
+      
     <title>Swing Magazine</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="assets/css/styles.css" rel="stylesheet"> 
+    <script src="assets/js/script.js"></script>
+  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- update the version number as needed -->
@@ -18,52 +24,39 @@
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
 
-    <style media="screen">
-      body { background: #D3D3D3; color: rgb(211,211,211); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
 
-    <style>
-      .nav-pills > li.active > a, .nav-pills > li.active > a:focus {
-          color: black;
-          background-color: #cec396;
-        }
-      .nav-pills > li.active > a:hover {
-          color:black;
-          background-color: #ced500;
-      }
-    </style>
   </head>
 
   <body>
-    <div class="container">
-      <ul class="nav nav-pills nav-justified">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Menu 1</a></li>
-        <li><a href="#">Menu 2</a></li>
-        <li><a href="#">Menu 3</a></li>
-      </ul>
+      
+    
+      
+    <div class="nav nav-pills">
+        <ul class="nav nav-pills nav-justified">
+            <li><a href="#"><font color="black">Home</font></a></li>
+            <li><a href="#"><font color="black">Hair</font></a></li>
+            <li><a href="#"><font color="black">Face</font></a></li>
+            <li><a href="#"><font color="black">Nails</font></a></li>
+            <li><a href="#"><font color="black">Contact Us</font></a></li>
+        </ul>
     </div>
+      
+    <div class="content">
+        
+        <image src="assets/images/bigswing.JPG" width=100%>swing</image>
+        <h2>Swing Magazine</h2>
+      
+    </div>  
+      
     <div id="message">
-      <h1>Swing Magazine</h1>
       <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-      <h2> Hello WORLD I edited this!</h2>
-      <h2> EDIT THIS SHT</h2>
-        <h2>Xavier trying to push to the repo</h2>
     </div>
+      
     <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
+      
+      <!-- with this below the image I tried to put on the page wouldn't show -->
+  <!--  <script>
       document.addEventListener('DOMContentLoaded', function() {
         // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
         // // The Firebase SDK is initialized and available here!
@@ -83,8 +76,9 @@
           document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
         }
       });
-    </script>
+    </script> -->
 
+      
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
