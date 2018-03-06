@@ -3,3 +3,4 @@
 *.rules
 *.firebaserc
 firestore.indexes.json
+firebase.json
