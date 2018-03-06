@@ -1,0 +1,6 @@
+*/functions
+*/node_modules
+*.rules
+*.firebaserc
+firestore.indexes.json
+firebase.json
