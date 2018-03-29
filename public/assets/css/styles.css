@@ -118,31 +118,44 @@ body
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+   /* background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); */
+
 }
 
 /* Modal Header */
 .modal-header {
     padding: 2px 16px;
-    background-color: #cec396;
+    background-color: purple;
     color: black;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    clear: both;
 }
 
 /* Modal Body */
-.modal-body {
-  padding: 2px 16px;
-  background-color: #cec396;
-  color: black;
+.modal-body {   
+    padding: 2px 16px;
+    background-color: blue;
+    color: black;
+  
+    
 }
-
+.column {
+    padding:20px;
+    float: left;
+    width: 50%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 /* Modal Footer */
 .modal-footer {
     padding: 2px 16px;
-    background-color: #cec396;
+    background-color: orange;
     color: black;
     text-align: center;
     margin-left: auto;
@@ -151,10 +164,11 @@ body
 
 /* Modal Content */
 .modal-content {
+    text-align: center;
     position: relative;
-    background-color: #e5e5e5;
+    background-color: black;
     margin: auto;
-    padding: 0;
+    padding-right:10px;
     border: 1px solid #888;
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
@@ -162,17 +176,7 @@ body
     animation-duration: 0.4s
 }
 
-.column1 {
-    float: left;
-    height: 100%;
-    padding: 5px;
-}
 
-.column2 {
-    float: left;
-    height: 25%;
-    padding: 5px;
-}
 
 /* Add Animation */
 @keyframes animatetop {
