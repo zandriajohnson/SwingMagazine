@@ -21,7 +21,7 @@ function addSubscriber(){
     var subName = document.getElementById('name').value;
     var subEmail = document.getElementById('email').value;
     var subSocial = document.getElementById('social-handle').value;
-   
+
     var db = firebase.database();
     var ref = db.ref();
     var subscribers = ref.child('user/subscribers');
@@ -33,11 +33,14 @@ function addSubscriber(){
       "social_handle": subSocial
     });
 
+    var modal = document.getElementById('myModal');
+    modal.style.display = "none";
+
     console.log(subEmail);
     console.log(subName);
     console.log(subSocial);
 }
-  
+
 function sendEmail(){
 
     var email_body = document.getElementById('message').value;
@@ -46,26 +49,3 @@ function sendEmail(){
 
     window.open('mailto:test@example.com?subject=subject&body=body');
 }
-
-    /*       
-    to be added when we set up subscription page
-
-    <div id="formStyle" class="form-group">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" id="name" placeholder="Name">
-        </div>
-
-        <div id="formStyle" class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="email" placeholder="Email">
-        </div>
-
-        <div id="formStyle" class="form-group">
-          <label for="exampleInputPassword1">Twitter Handle</label>
-          <input type="text" class="form-control" id="social-handle" placeholder="Password">
-        </div>
-
-        
-        <a onclick="addSubscriber()" class="btn btn-primary" href="#"> Contact</a>
-        
-        */

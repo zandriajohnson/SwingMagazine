@@ -28,10 +28,6 @@
 
   </head>
 
-  <body>
-
-
-
     <div class="nav nav-pills">
         <ul class="nav nav-pills nav-justified">
             <li><a href="index.html"><font color="black">Home</font></a></li>
@@ -44,16 +40,53 @@
 
     <div class="content">
         <image src="assets/images/bigswing.JPG" width=100%>swing</image>
-       
-
+        <h2>Swing Magazine</h2>
     </div>
 
-      
+    <body onload="popupFunction()">
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h1>S U B S C R I B E</h1>
+          </div>
+
+          <div class="modal-body">
+            <div class="column1">
+              <image src="assets/images/SwingMagLogoBack-Gold.jpg"></image>
+            </div>
+
+            <div class= "column2">
+              <div id="formStyle" class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Name">
+              </div>
+
+              <div id="formStyle" class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="email" placeholder="Email">
+              </div>
+
+              <div id="formStyle" class="form-group">
+                  <label for="exampleInputPassword1">Twitter Handle</label>
+                  <input type="text" class="form-control" id="social-handle" placeholder="Handle">
+              </div>
+
+              <a onclick="addSubscriber2()" class="btn btn-primary" >Submit</a>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+
+          </div>
+        </div>
+      </div>
 
     <div id="message">
       <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
       <h1>HOME</h1>
     </div>
+
 
     <p id="load">Firebase SDK Loading&hellip;</p>
 
@@ -79,6 +112,30 @@
           document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
         }
       });
+
+      function popupFunction() {
+        // Get the modal
+        var modal = document.getElementById('myModal');
+        modal.style.display = "block";
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+
+      };
     </script>
 
 
