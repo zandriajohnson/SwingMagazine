@@ -90,16 +90,19 @@ body
         box-shadow: none;
     }
 
-    body
-    {
-        border-top: 16px solid #ffa100;
-    }
+
 }
+
+/*#myTopnav
+{
+    position: fixed;
+    
+}*/
 
 .nav-pills {
   overflow: hidden;
   background-color: #cec396;
-}
+ }
 
 .nav-pills a {
   float: left;
