@@ -270,3 +270,8 @@ when navbar start collapsing
   margin: auto;
 }
 
+img.hover-shadow {
+    transition: 0.3s
+}
+
+
