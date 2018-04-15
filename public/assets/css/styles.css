@@ -215,47 +215,6 @@ when navbar start collapsing
     background-color: #ced500;
 } */
 
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.7); 
-
-}
-
-
-/* Modal Content */
-.modal-content {
-    color: #cec396;
-    text-align: center;
-    position: relative;
-    background-color: black;
-    margin: 5% auto;
-    width: 75%;
-    padding-right: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    animation-name: animatetop;
-    animation-duration: 0.4s;
-}
-.column {
-    padding: 20px;
-    float: left;
-    width: 50%;
-    font-size: 20px;
-}
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
 
 
@@ -274,57 +233,16 @@ img.hover-shadow {
     transition: 0.3s
 }
 
-p{
-    color:black;
-}
 
-h1{
-    color:black;
-}
 
-h2{
-    color: black;
-}
-
-h3{
-    color: black;
-}
-
-h4{
-    color:black;
-}
-
-/* The Modal (background)*/
-.imageModal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: black;
-  }
-  
-  /* Modal Content */
-  .imageModal-content {
-    position: relative;
-    background-color: #000000;
-    margin: auto;
-    padding: 0;
-    width: 90%;
-    max-width: 1200px;
-  }
     
   /* The Close Button */
   .close {
-    color: white;
+    color: black;
     position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 35px;
+    top: 5px;
+    right: 20px;
+    font-size: 25px;
     font-weight: bold;
   }
   
@@ -401,3 +319,104 @@ h4{
   .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
   }
+
+  p{
+    color:black;
+}
+
+h1{
+    color:black;
+}
+
+h2{
+    color: black;
+}
+
+h3{
+    color: black;
+}
+
+h4{
+    color:black;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.7); 
+
+}
+
+/* Modal Content */
+.modal-content {
+    border: 1px solid #cec396;
+    background-color: white;
+    color: #cec396;
+    text-align: center;
+    
+    margin: 5% auto;
+    width: 60%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    border-radius: 0px;
+}
+.column {
+    color: #cec396;
+    position: inherit;
+    float: left;
+    width: 50%;
+    height: 300px;
+    font-size: 20px;
+}
+
+.row:after {
+    border: #d64040;
+    color: #cec396;
+    content: "";
+    display: table;
+    clear: both;
+    width: 50%;
+    
+}
+
+.video {
+  padding-top: 5%;
+  padding-left: 5px;
+}
+
+.modal-text {
+    font-family: 'Playfair Display', serif;
+    padding-top: 5%;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+
+input {
+    width: 100%;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.a-modal{
+    background-color: black; /* Green */
+    width: 100%; 
+    color:white;
+    padding: 10px;
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+}
