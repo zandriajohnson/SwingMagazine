@@ -80,7 +80,7 @@ body
     font-size: 13px;
 }
 
-@media (max-width: 600px)
+@media (max-width: 750px)
 {
 
     body, #message
@@ -88,6 +88,14 @@ body
         margin-top: 0;
         background: white;
         box-shadow: none;
+    }
+
+    #video-div {
+        display: none;
+    }
+
+    #form-div {
+        width: 100%;
     }
 
 
@@ -404,13 +412,10 @@ h4{
 }
 
 .row:after {
-    border: #d64040;
-    color: #cec396;
     content: "";
     display: table;
     clear: both;
     width: 50%;
-    
 }
 
 .video {
