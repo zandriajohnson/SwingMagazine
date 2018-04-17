@@ -14,16 +14,27 @@
         // When the user clicks on <span> (x), close the modal
         span.onclick = function() {
           modal.style.display = "none";
+          stopVideo();
+          //callPlayer('video-div', 'stopVideo');
+          
         }
+/*
+        $('#videooo').on('hide.bs.modal', function(e) {    
+          jQuery('#videooo video').attr("src", jQuery("#videooo video").attr("src"));
+          //callPlayer('video-div', 'stopVideo');
+      });
+*/
 
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(event) {
           if (event.target == modal) {
             modal.style.display = "none";
+            stopVideo();
           }
         }
 
       };
+
 
 (function(){
 
@@ -89,6 +100,10 @@ function myFunction() {
 function openModal() {
   document.getElementById('myModal').style.display = "block";
 }
+
+function stopVideo() {
+  document.getElementById('videooo').pause();
+ }
 
 function closeModal() {
   document.getElementById('myModal').style.display = "none";
