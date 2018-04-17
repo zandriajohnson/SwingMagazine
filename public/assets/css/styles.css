@@ -1,8 +1,9 @@
 body
 {
     background: #D3D3D3;
-    color: rgb(211,211,211);
-    font-family: Roboto, Helvetica, Arial, sans-serif;
+   /* color: rgb(211,211,211);
+    font-family: Roboto, Helvetica, Arial, sans-serif;*/
+    font-family: 'Playfair Display', serif;
     margin: 0;
     padding: 0;
 }
@@ -86,7 +87,6 @@ body
     body, #message
     {
         margin-top: 0;
-        background: white;
         box-shadow: none;
     }
 
