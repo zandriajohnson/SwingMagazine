@@ -1,18 +1,12 @@
 <!DOCTYPE html>
-<html>
-  <head lang="en">
+<html lang="en">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=0">
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-
-
     <title>Swing Magazine</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="assets/css/styles.css" rel="stylesheet">
-    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
-    <script src="assets/js/script.js"></script>
 
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- update the version number as needed -->
@@ -24,25 +18,34 @@
     <script defer src="/__/firebase/4.9.0/firebase-storage.js"></script>
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display:400,400i" rel="stylesheet">
 
-
-  </head>
-
-  <body>
-    <div class="nav-pills nav-justified" id="myTopnav">
-            <a href="index.html"><font color="#d64040">Home</font></a>
-            <a href="hair.html"><font color="#d64040">Hair</font></a>
-            <a href="face.html"><font color="#d64040">Face</font></a>
-            <a href="nails.html"><font color="#d64040">Nails</font></a>
-            <a href="contact.html"><font color="#d64040">Contact Us</font></a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
-
-    <div class="content">
-        <image src="assets/images/bigswing.JPG" width=100%></image>
-    </div>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  
+    <script src="assets/js/script.js"></script>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display:400,400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Allura|Dr+Sugiyama|Dynalight|Great+Vibes|Meie+Script|Mr+Bedfort" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Niconne|Petit+Formal+Script|Rochester" rel="stylesheet">
+  <link href="assets/css/styles.css" rel="stylesheet">
+  <link href="assets/css/contactStyle.css" rel="stylesheet">
+  <head>
+</head>
+<body>
+    <div class="header">
+        <image class="mx-auto" src="assets/images/SwingMag.jpg" width=70%></image>
+      </div>
+    <div class="nav-pills" id="myTopnav">
+    
+        <a href="index.html"><font color="#cec396">Home</font></a>
+        <a href="hair.html"><font color="#cec396">Hair</font></a>
+        <a href="face.html"><font color="#cec396">Face</font></a>
+        <a href="nails.html"><font color="#cec396">Nails</font></a>
+        <a href="contact.html"><font color="#cec396">Subscribe</font></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
     <img class="mx-auto hover-shadow cursor rounded float-left" style="width:48%; margin-bottom: -4px;" src="assets/images/bb5.jpg" onclick="openModal();currentSlide(5)"></img>
     <img class="mx-auto hover-shadow cursor rounded float-right" style="width:48%; margin-bottom: -4px;" src="assets/images/FITC.jpg" onclick="openModal();currentSlide(18)"></img>
     <br></br>
