@@ -15,16 +15,7 @@
         span.onclick = function() {
           modal.style.display = "none";
           stopVideo();
-          //callPlayer('video-div', 'stopVideo');
-          
         }
-/*
-        $('#videooo').on('hide.bs.modal', function(e) {    
-          jQuery('#videooo video').attr("src", jQuery("#videooo video").attr("src"));
-          //callPlayer('video-div', 'stopVideo');
-      });
-*/
-
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(event) {
           if (event.target == modal) {
@@ -37,9 +28,6 @@
 
 
 (function(){
-
- // Set the configuration for your app
-  // TODO: Replace with your project's config object
   var config = {
     apiKey: "AIzaSyCAAZk5kcdhwsSYjDaZ15DcgjT_mfEVDnE",
     authDomain: "swingmagazinelesgetit.firebaseapp.com",
@@ -49,12 +37,11 @@
     messagingSenderId: "406177441271"
   };
   firebase.initializeApp(config);
-
-  // Get a reference to the database service
-  //var database = firebase.database();
 }());
 
 function addSubscriber(){
+
+  
     var subName = document.getElementById('name').value;
     var subEmail = document.getElementById('email').value;
     var subSocial = document.getElementById('social-handle').value;
@@ -70,12 +57,25 @@ function addSubscriber(){
       "social_handle": subSocial
     });
 
+    if(subName != '' && subEmail != ''){
+       var x = document.getElementById("snackbar");
+
+        // Add the "show" class to DIV
+        x.className = "show";
+
+        // After 3 seconds, remove the show class from DIV
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+
+
     var modal = document.getElementById('myModal');
     modal.style.display = "none";
 
-    console.log(subEmail);
-    console.log(subName);
-    console.log(subSocial);
+    document.getElementById('name').value = ' ';
+    document.getElementById('email').value= '';
+    document.getElementById('social-handle').value= '';
+    }
+  
+
 }
 
 function sendEmail(){

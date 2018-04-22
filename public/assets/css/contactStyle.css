@@ -1,0 +1,163 @@
+
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+   
+   h2, h3, h4 {
+     
+      font-family: 'Abril Fatface', cursive; margin: 0;
+    }
+    h1 {
+      font-family: 'Abril Fatface', cursive; margin: 0;
+      text-align: center;
+    }
+
+    p , body {
+      font-family: 'Playfair Display', serif;
+      font-size: 12px;
+    }
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background: #D3D3D3;
+     
+    }
+    
+    .header {
+      background-color: white;
+      padding: 10px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+        
+      }
+      .row.content {
+        height: auto;
+        }
+        
+        #mySidenav {
+          display:none;
+        } 
+
+        .header{
+            display: none;
+        }
+    }
+
+.fa-facebook {
+    top: 240px;
+    /*top:60px;*/
+    background: #d64040;
+    /*background: #3B5998;*/
+    color: white;
+  }
+  
+  
+.fa-youtube {
+     background: #d64040;
+     top: 360px;
+    /*background: #bb0000;*/
+    color: white;
+  }
+  
+  .fa-instagram {top: 300px;
+    /*background: #125688;*/
+    background: #d64040;
+    color: white;
+  }
+
+  .fa-envelope {top: 420px;
+    /*background: #125688;*/
+    background: #d64040;
+    color: white;
+  }
+
+  hr {
+   border-color: #d64040;
+  }
+  #myTopnav {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 14px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+  }
+
+  /* Style the links inside the sidenav */
+#mySidenav a {
+    height:auto;
+    position: fixed; /* Position them relative to the browser window */
+    right: 40px;
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 50px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    
+}
+
+#mySidenav a:hover {
+    opacity: 0.7;
+}
+
+#contactForm {
+    font-size: 15px;
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #cec396; /* Black background color */
+    color: black; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+    border: 1px solid black;
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}

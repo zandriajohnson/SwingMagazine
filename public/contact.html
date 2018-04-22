@@ -1,6 +1,6 @@
+
 <!DOCTYPE html>
-<html>
-  <head lang="en">
+<html lang="en">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=0">
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,92 +21,99 @@
     <script defer src="/__/firebase/init.js"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	  <link href="assets/css/styles.css" rel="stylesheet">
+	  
     <script src="assets/js/script.js"></script>
-
-  </head>
-
-  <body>
-
-
-
-    <div class="nav-pills nav-justified" id="myTopnav">
-            <a href="index.html"><font color="#d64040">Home</font></a>
-            <a href="hair.html"><font color="#d64040">Hair</font></a>
-            <a href="face.html"><font color="#d64040">Face</font></a>
-            <a href="nails.html"><font color="#d64040">Nails</font></a>
-            <a href="contact.html"><font color="#d64040">Contact Us</font></a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
-
-    <div class="content">
-        <image src="assets/images/bigswing.JPG" width=100%>swing</image>
-        <h2>Swing Magazine</h2>
-
-    </div>
-
-    <div id="message" class="container-fluid">
-      <!--<a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>-->
-      <h1>CONTACT FORM</h1>
-      <form>
-        <div id="formStyle" class="form-group">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" id="name" placeholder="Name">
-        </div>
-
-        <div id="formStyle" class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="email" placeholder="Email">
-        </div>
-
-        <div id="formStyle" class="form-group">
-          <label for="exampleInputPassword1">Message</label>
-          <br><textarea  name="message" maxlength="1000" cols="25" rows="6" class="form-control"></textarea>
-        </div>
-
-
-        <a onclick="" class="btn btn-primary" href="#"> Contact</a>
-      </form>
-    </div>
-
-    <div id="message" class="container-fluid">
-      <h1>About Us</h1>
-      <h3>Phone</h3>
-      <p>314-437-9299</p>
-      <h3>Email</h3>
-      <p>contact.swingmagazine@gmail.com</p>
-      <h3>Address</h3>
-      <p>Downtown STL 63101</p>
-      <!-- add mission statement etc. here-->
-    </div>
-    <!--<p id="load">Firebase SDK Loading&hellip;</p>-->
-
-    <!--<script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>-->
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   
-  </body>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display:400,400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Allura|Dr+Sugiyama|Dynalight|Great+Vibes|Meie+Script|Mr+Bedfort" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Niconne|Petit+Formal+Script|Rochester" rel="stylesheet">
+  <link href="assets/css/styles.css" rel="stylesheet">
+  <link href="assets/css/contactStyle.css" rel="stylesheet">
+  <head>
+</head>
+<body>
+    <div class="header">
+        <image class="mx-auto" src="assets/images/SwingMag.jpg" width=70%></image>
+      </div>
+    <div class="nav-pills nav-justified navbar-fixed-top" id="myTopnav">
+    
+        <a href="index.html"><font color="#cec396">Home</font></a>
+        <a href="hair.html"><font color="#cec396">Hair</font></a>
+        <a href="face.html"><font color="#cec396">Face</font></a>
+        <a href="nails.html"><font color="#cec396">Nails</font></a>
+        <a href="contact.html"><font color="#cec396">Subscribe</font></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3 sidenav">
+        
+        <div id="message" class="container-fluid">
+            <image class="mx-auto" src="assets/images/SwingMagFrontSM.png" width=100%></image>
+          <h1 >About Us</h1>
+          <hr>
+      <p>
+          Mission:
+      Our industry is a culture! We understand what it takes to be successful, 
+      and we embody the values of professionalism. <br><br>
+      Ushering in a new era of exposure for the cosmetologist, barber, aesthetician, nail tech, 
+      and make-up artist. Swing Magazine is your platform to showcase hard work and creativity.<br><br>
+      Our discernment of uniqueness and innovation is manifested in creative advertising campaigns, 
+      original artistry awards, seasonal themes, and superior photography and journalism.
+      <br><br>Swing Magazine is sound marketing for a new-age beauty culture!</p>
+
+      <h1>Contact</h1>
+          <hr>
+      
+      <p style="text-align: center"><b>Phone: </b>314-437-9299</p>
+      <p style="text-align: center"><b>Address:</b> Downtown STL 63101</p>
+
+        </div>
+    </div>
+   
+    <div id="contactForm" class="col-sm-8" >
+        <video id="videooo" class="videooo" width=100% loop autoplay>
+            <source src="assets/videos/SwinmagazineGold.mp4" type="video/mp4">
+        </video>
+        <hr>
+        <h4 style=" font-family: 'Playfair Display', serif; text-align: center;">Swing Magazine offers a new method of exposure for the cosmetologist, 
+          barber, aesthetician, nail technician and make-up artist.</h4><br>
+     <div style="text-align: center; padding-bottom: 10px;">
+          <h1 style="font-family: 'Great Vibes', cursive; display:inline;">Create. Imagine. Beauty.</h1></div>
+         
+          <div style="padding-bottom: 5px">
+            <input required type="text"  id="name" placeholder="Name" ></div>
+            <div style="padding-bottom: 5px">
+            <input required type="email" id="email" placeholder="Email"></div>
+            <div style="padding-bottom: 7px">
+            <input type="text"  id="social-handle" placeholder="@Swing_Magazine_"></div>
+          <button onclick="addSubscriber()" class="a-modal" type="submit">SUBSCRIBE </button>
+      <br><br>
+
+<!-- The actual snackbar -->
+<div id="snackbar">Welcome to the Network!</div>
+    </div>
+    <div class="col-sm-2 sidenav">
+        <div  class="container-fluid">
+    <div id="mySidenav" class="sidenav">
+        <a href="https://www.facebook.com/SwingMagazineSTL/" class="fa fa-facebook" ></a>
+        <a href="https://www.instagram.com/swing_magazine_"  class="fa fa-instagram" ></a>
+        <a href="https://www.youtube.com/channel/UC_JsWXAMIP69-TdvfdaUDpA" class="fa fa-youtube" ></a>
+       <a href="mailto:contact.swingmagazine@gmail.com" class="fa fa-envelope"></a>
+      </div>
+       </div> 
+       </div>
+ 
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
 </html>
-`
