@@ -13,7 +13,7 @@
 
     p , body {
       font-family: 'Playfair Display', serif;
-      font-size: 12px;
+      font-size: 13px;
     }
     /* Set gray background color and 100% height */
   
@@ -82,7 +82,7 @@
 #mySidenav a {
     height:auto;
     position: fixed; /* Position them relative to the browser window */
-    right: 40px;
+    right: 25px;
     transition: 0.3s; /* Add transition on hover */
     padding: 15px; /* 15px padding */
     width: 50px; /* Set a specific width */
@@ -157,3 +157,28 @@ However, delay the fade out process for 2.5 seconds */
     from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
 }
+
+  
+    .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+    
+  }
+  .person:hover {
+      border-color: #cec396;
+    
+  }
+  
+  .carousel-caption h3 {
+      
+      color: #fff !important;
+  }
+  
+  .carousel-inner img {
+   
+      width: 100%; /* Set width to 100% */
+      max-height: 750px;
+     /* margin: auto;*/
+  }

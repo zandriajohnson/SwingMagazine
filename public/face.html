@@ -33,11 +33,16 @@
   <link href="assets/css/contactStyle.css" rel="stylesheet">
   <head>
 </head>
+<style>
+    p {
+        font-size: 14px;
+    }
+</style>
 <body>
     <div class="header">
         <image class="mx-auto" src="assets/images/SwingMag.jpg" width=70%></image>
       </div>
-    <div class="nav-pills" id="myTopnav">
+    <div class="nav-pills navbar-fixed-top" id="myTopnav">
     
         <a href="index.html"><font color="#cec396">Home</font></a>
         <a href="hair.html"><font color="#cec396">Hair</font></a>
@@ -46,86 +51,137 @@
         <a href="contact.html"><font color="#cec396">Subscribe</font></a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
-    <img class="mx-auto hover-shadow cursor rounded float-left" style="width:48%; margin-bottom: -4px;" src="assets/images/bb5.jpg" onclick="openModal();currentSlide(5)"></img>
-    <img class="mx-auto hover-shadow cursor rounded float-right" style="width:48%; margin-bottom: -4px;" src="assets/images/bb14.jpg" onclick="openModal();currentSlide(18)"></img>
-    <br></br>
+<div row>
+    <div class="col-sm-6" style="padding:0;">
+    <img class="mx-auto hover-shadow rounded float-left" style="width:100%;" src="assets/images/bb5.jpg" onclick="openModal();currentSlide(5)"></img>
+    </div>
+    <div class="col-sm-6" style="padding:0;">
+        <img class="mx-auto hover-shadow rounded " style="width:100%; " src="assets/images/bb14.jpg" onclick="openModal();currentSlide(18)"></img>
+   </div>
+</div> 
+   
     <div class="row">
         <div class="col-sm-10 col-sm-offset-1 hid">
             <div class="row">
-                <div class="col-sm-6 col-sm-offset-3 text-center">
-                    <h2 style="color: black">Swing Magazine Celebrates Greatness</h2>
+                <hr>
+                <div class="col-sm-7 col-sm-offset-3 text-center">
+                    <h2 >SWING MAGAZINE CELEBRATES GREATNESS</h2>
                     <p>Swing Magazine recognized those of <b>outstanding</b> abilities with various awards and recognition. 
                       These awards were presented at last year's <span style="color: #d64040"> STLNHBCE2017 Meet Up Beauty Bar</span>
                     </p>
-                    <h3 style="color: black">Click <a onclick="openModal();currentSlide(1)">the link</a> to view the gallary of awards presented.</h3>
+                    <p style="font-size: 16px;">Click <a style="color:#d64040;" onclick="openModal();currentSlide(1)">
+                        <i>the link</i></a> to view the gallary of awards presented.</p>
                 </div>
             </div>
         </div>
     </div>
     
     <br><br>
-    <div style=" margin-left: 4%; width: 100%; display: inline; align-content: center;">
-        <img class="mx-auto hover-shadow cursor rounded float-left" style="width:30%;" src="assets/images/bb3.jpg" onclick="openModal();currentSlide(3)" alt="1yfounder"></img>
-        <img class="mx-auto hover-shadow cursor rounded float-right" style="width:30%;" src="assets/images/bb6.jpg" onclick="openModal();currentSlide(6)" alt="1yfounder"></img>
-        <img class="mx-auto hover-shadow cursor rounded float-left" style="width:30%;" src="assets/images/bb10.jpg" onclick="openModal();currentSlide(10)" alt="1yfounder"></img>
+    <div class="container text-center">
+        <div row>
+   <div class="col-md-4">
+        <img class="mx-auto hover-shadow cursor rounded float-left" style="width:100%;" src="assets/images/bb3.jpg" onclick="openModal();currentSlide(3)" alt="1yfounder"></img>
+       </div> 
+       <div class="col-md-4">
+       <img class="mx-auto hover-shadow cursor rounded float-right"  style="width:100%;" src="assets/images/bb6.jpg" onclick="openModal();currentSlide(6)" alt="1yfounder"></img>
+       </div>
+       <div class="col-md-4"> 
+           <img class="mx-auto hover-shadow cursor rounded float-left" style="width:100%;" src="assets/images/bb10.jpg" onclick="openModal();currentSlide(10)" alt="1yfounder"></img>
+    </div>
+</div> 
     </div>  
+</div>
 
-    <br></br>
     <div class="row">
       <div class="col-sm-10 col-sm-offset-1 hid">
           <div class="row">
               <div class="col-sm-6 col-sm-offset-3 text-center">
-               
-                  <br><br><br><br>
-                  
-                  <h3>Follow the hashtag: <a href="https://twitter.com/hashtag/STLNHBCE2017">#STLNHBCE</a> to take a look at the Meet-Up Beauty Bar</h3>
-                  <br><br>
+                  <br>
+                  <h3>FOLLOW THE HASHTAG</h3>
+                    <h4>
+                        <a style="color:#d64040;" href="https://twitter.com/hashtag/STLNHBCE2017">#STLNHBCE</a> 
+                    </h4>
+                    <p style="font-size: 16px;">to take a look at the <i>Meet-Up Beauty Bar</i></p>
+                
                   <h4>
                     <a href="https://twitter.com/hashtag/STLNHBCE2017"> 
-                      <img src="assets/images/twitter.png" style="width:15%;"> 
+                      <img src="assets/images/twitter.png" style="width:10%; padding-right: 20px;"> 
                     </a>
                     <a href="https://www.instagram.com/explore/tags/stlnhbce2017/"> 
-                      <img src="assets/images/glyph-logo_May2016.png" style="width:15%;"> 
+                      <img src="assets/images/glyph-logo_May2016.png" style="width:10%; padding-right: 20px;"> 
                     </a>
                     <a href="https://www.facebook.com/hashtag/stlnhbce17"> 
-                      <img src="assets/images/facebook.png" style="width:15%;"> 
+                      <img src="assets/images/facebook.png" style="width:10%; padding-right: 20px;"> 
                     </a>
                   </h4>
               </div>
           </div>
       </div>
     </div>
-    
-    <br><br><br><br>
+    <div id="mySidenav" class="sidenav">
+            <a href="https://www.facebook.com/SwingMagazineSTL/" class="fa fa-facebook" ></a>
+            <a href="https://www.instagram.com/swing_magazine_"  class="fa fa-instagram" ></a>
+            <a href="https://www.youtube.com/channel/UC_JsWXAMIP69-TdvfdaUDpA" class="fa fa-youtube" ></a>
+           <a href="mailto:contact.swingmagazine@gmail.com" class="fa fa-envelope"></a>
+          </div>
 
+    <div class="container text-center"> <HR><h3>MAKEUP</h3><hr>
     <div class="row">
-        <div class="col-md-3 col-md-offset-2">
-            <h1 style="color:black">Valley Jay</h1>
-            <h3><a style="color:#d64040;" href="https://www.instagram.com/_mylifeasvalley/"><img src="assets/images/glyph-logo_May2016.png" style="width: 10%"> @_mylifeasvalley</a></h3>
+        <div class="col-md-4">
+            <h3 style="color:black">VALLEY JAY</h3>
+            <h4><a style="color:#d64040;" href="https://www.instagram.com/_mylifeasvalley/"> @_mylifeasvalley</a></h4>
             <br>
-            <p>Valarie has been  on the makeup scene for three years. A part-time  makeup artist at Sephora, she also freelances out of her home studio. Her work and booking can be found at<a href="https://valley-jay-cosmetics.myshopify.com/"><span style="color:red"> valleyjaycosmetics.com</span></a>.</p>
+            <p >Valarie has been  on the makeup scene for three years. 
+                A part-time  makeup artist at Sephora, she also freelances out of her home studio. 
+                Her work and booking can be found at<a href="https://valley-jay-cosmetics.myshopify.com/">
+                    <span style="color:red"> valleyjaycosmetics.com</span></a>.</p>
             <br>
-            <p>Valarie enjoys being able to enhance the beauty of others and the artistic aspects of makeup.  Empowering women by making them feel more beautiful is something she has always wanted to be a part of.</p>
+            <p >Valarie enjoys being able to enhance the beauty of others and the artistic aspects of makeup.  
+                Empowering women by making them feel more beautiful is something she has always wanted to be a 
+                part of.</p>
             <br>
-            <p>What makes Valarie good at what she does?  Simply, she loves her work.  She loves helping women build confidence and self-esteem, and what better way is there to do that than through makeup artistry?!</p>
+            <p >What makes Valarie good at what she does?  Simply, she loves her work.  
+                She loves helping women build confidence and self-esteem, and what better way is 
+                there to do that than through makeup artistry?!</p>
 
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
             <img src="assets/images/valley2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
             <img src="assets/images/valley3.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
             <br>
             <br>
-            <p>Valarie plans to continue working as a makeup artist, but she also has her own cosmetic line, launched March 10th 2017, so be on the lookout for that! It will be a luxury line of Cosmetics filled with lashes, lip products, and unique makeup tools.
+            <p >Valarie plans to continue working as a makeup artist, 
+                but she also has her own cosmetic line, launched March 10th 2017, 
+                so be on the lookout for that! It will be a luxury line of Cosmetics filled with lashes, 
+                lip products, and unique makeup tools.
             </p>
             <br>
-            <p>
-            Valarie was encouraged to become a makeup artist by Joy Loveless, another local artist. The two met while Valerie was still in high school, before she began her journey with makeup artistry.  Loveless selflessly helped her and was extremely detailed about how Valarie should go about pursuing her dreams. They would go over proper skin care, brushes and makeup application. Loveless encouraged her by saying that she could master her craft if she put in the work, so that’s just what Valarie did.
+            <p >
+            Valarie was encouraged to become a makeup artist by Joy Loveless, 
+            another local artist. The two met while Valerie was still in high school, 
+            before she began her journey with makeup artistry.  Loveless selflessly helped 
+            her and was extremely detailed about how Valarie should go about pursuing her dreams. 
+            They would go over proper skin care, brushes and makeup application. 
+            Loveless encouraged her by saying that she could master her craft if she put in the work, 
+            so that’s just what Valarie did.
             </p>
         </div>
         </div>
-    
+    </div>
+    <div class="container text-center"><hr>
+        <div class="row">
+                <div class="col-md-3"></div>
+            <div class="col-md-3">
+             <image class="mx-auto img-circle person" src="assets/images/esthe.png" width=100%></image>
+            </div>
+    <div class="col-md-3">
+            <image class="mx-auto img-circle person" src="assets/images/makeup.png" width=100%></image>
+    </div>
+    <div class="col-md-3"></div>
+    </div>
+    </div>
     
      <div id="myModal" class="imageModal">
       <span class="close cursor" onclick="closeModal()">&times;</span>
@@ -267,15 +323,6 @@
 
    <!-- <image class="mx-auto hover-shadow cursor rounded float-left" src="assets/images/bb14.jpg" width=45% onclick="openModal();currentSlide(14)"></image> -->
 
-
-
-            <image class="mx-auto hover-shadow cursor rounded float-left" src="assets/images/SwingMagFrontSM.png" width=25%></image>
-            <image class="mx-auto hover-shadow cursor rounded float-right" src="assets/images/makeup.png" width=20% style="float: right;"></image>
- 
-
-
-
-
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
@@ -299,7 +346,7 @@
 
       
     </script>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
