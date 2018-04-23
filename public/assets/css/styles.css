@@ -213,10 +213,12 @@ img.hover-shadow {
   /* Modal Content */
   .imageModal-content {
     position: relative;
-    background-color: #000000;
+    /*background-color: #000000;*/
+    background-color: white;
     margin: auto;
     padding: 0;
     width: 90%;
+    height: 100%;
     max-width: 1200px;
   }
 
@@ -292,9 +294,9 @@ img.hover-shadow {
   
   .caption-container {
     text-align: center;
-    background-color: black;
+    background-color: white;
     padding: 2px 16px;
-    color: white;
+    color: black;
   }
   
   img.hover-shadow {
