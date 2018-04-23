@@ -33,7 +33,46 @@
   <link href="assets/css/contactStyle.css" rel="stylesheet">
   <head>
 </head>
-<body>
+<style>
+.container {
+  padding-top:80px;
+}
+
+.container p{
+  font-size: 16px;
+}
+
+  .person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+  
+}
+.person:hover {
+    border-color: #cec396;
+  
+}
+
+.carousel-caption h3 {
+    
+    color: #fff !important;
+}
+
+.carousel-inner img {
+ 
+    width: 100%; /* Set width to 100% */
+    max-height: 750px;
+   /* margin: auto;*/
+}
+body{
+  background-color: white;
+}
+
+
+</style>
+
+<body onload="popupFunction()"> 
     <div class="header">
         <image class="mx-auto" src="assets/images/SwingMag.jpg" width=70%></image>
       </div>
@@ -47,27 +86,9 @@
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 
-    <!--<div class="content">
-        <image src="assets/images/BigSwing.JPG" width=100%></image>
-        
-        <video width=100% autoplay loop>
-            <source src="assets/videos/CircleIntro.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video> 
-
-    </div>-->
-
+<!--
     <iframe width=100% height="626" src="https://www.youtube.com/embed/1QTnD3VWp3E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <div class="content">
-      <h2 style="color:black; text-align:center;" width=100%>SWING 1 Year Anniversary Recap</h2>
-    </div>
-    <br></br>
-
-    <img class="mx-auto" style="width:48%;" src="assets/images/bb10.jpg" class="rounded float-left" alt="1yfounder"></img>
-    <img class="mx-auto" style="width:48%;" src="assets/images/1ydaneshalee.jpg" class="rounded float-right" alt="1yfounder"></img>
-
-    <br></br>
-
+   -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -79,38 +100,57 @@
         <li data-target="#myCarousel" data-slide-to="5"></li>
         <li data-target="#myCarousel" data-slide-to="6"></li>
         <li data-target="#myCarousel" data-slide-to="7"></li>
+        <li data-target="#myCarousel" data-slide-to="8"></li>
+        <li data-target="#myCarousel" data-slide-to="9"></li>
       </ol>
 
       <!-- Wrapper for slides -->
-      <div class="carousel-inner">
+      <div class="carousel-inner img">
         <div class="item active">
           <img src="assets/images/1ycandice.jpg" alt="1ycandice">
+          <div class="carousel-caption"> <h3>1 YEAR ANNIVERSARY RECAP</h3><h5>Swing Magazine</h5></div>
         </div>
-
-        <div class="item">
-          <img src="assets/images/1yloyalty.jpg" alt="1yloyalty">
-        </div>
-
         <div class="item">
           <img src="assets/images/1ymartez.jpg" alt="1ymartez">
+          <div class="carousel-caption"> <h3>1 YEAR ANNIVERSARY RECAP</h3><h5>Swing Magazine</h5></div>
         </div>
-
         <div class="item">
           <img src="assets/images/1ymisscami.jpg" alt="1ymisscami">
+          <div class="carousel-caption"> <h3>1 YEAR ANNIVERSARY RECAP</h3><h5>Swing Magazine</h5></div>
         </div>
-
         <div class="item">
           <img src="assets/images/1yvalleyjay.jpg" alt="1yvalleyjay">
+          <div class="carousel-caption"> <h3>1 YEAR ANNIVERSARY RECAP</h3><h5>Swing Magazine</h5></div>
         </div>
-
+        <div class="item">
+            <img src="assets/images/1yloyalty.jpg" alt="1yloyalty">
+            <div class="carousel-caption"> <h3>1 YEAR ANNIVERSARY RECAP</h3><h5>Swing Magazine</h5></div>
+          </div>
         <div class="item">
           <img src="assets/images/1ywaxpertlofts.jpg" alt="1ywaxpertlofts">
+          <div class="carousel-caption"> <h3>1 YEAR ANNIVERSARY RECAP</h3><h5>Swing Magazine</h5></div>
         </div>
-
         <div class="item">
           <img src="assets/images/1yzeus.jpg" alt="1yzeus">
+          <div class="carousel-caption"> <h3>1 YEAR ANNIVERSARY RECAP</h3>
+          <h5>Swing Magazine</h5></div>
         </div>
+        <div class="item">
+            <img src="assets/images/1ycarta.jpg" alt="1ycarta">
+            <div class="carousel-caption"> <h3>1 YEAR ANNIVERSARY RECAP</h3>
+              <h5>Swing Magazine</h5></div>
+          </div>
+          <div class="item">
+              <img src="assets/images/1ychynabarber.jpg" alt="1ychynabarber">
+              <div class="carousel-caption"> <h3>1 YEAR ANNIVERSARY RECAP</h3><h5>Swing Magazine</h5></div>
+            </div>
+            <div class="item">
+                <img src="assets/images/1ydaneshalee.jpg" alt="1ydaneshalee">
+                <div class="carousel-caption"> <h3>1 YEAR ANNIVERSARY RECAP</h3>
+                  <h5>Swing Magazine</h5></div>
+              </div>
       </div>
+
 
       <!-- Left and right controls -->
       <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -122,8 +162,56 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+  
+     
+    <div class="container text-center">
+        <h3 style="padding-bottom: 5px;">WELCOME TO SWING MAGAZINE</h3>
+        <hr>
+        <p><em>Swing Magazine offers a new method of exposure for the cosmetologist, 
+          barber, aesthetician, nail technician and make-up artist. Create. Imagine. Beauty.</em></p>
+        <p>Our industry is a culture! We understand what it takes to be successful, and 
+          we embody the values of professionalism.
 
-    <body onload="popupFunction()">  
+            Ushering in a new era of exposure for the cosmetologist, barber, 
+            aesthetician, nail tech, and make-up artist. Swing Magazine is your 
+            platform to showcase hard work and creativity.
+        <br><br>
+               February 16th marks the 1 year anniversary of the official launch of SWING MAGAZINE! 
+            Here is a look back at all of the talented artist & great people who put on for the city & 
+            beauty industry 365! We appreciate your spirit, creativity, loyalty & desire for success! 
+            It’s takes something special to recognize something special! I hope you all enjoy this 
+            look back in time!
+          </p>
+        <br>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="https://www.facebook.com/SwingMagazineSTL/" class="fa fa-facebook" ></a>
+            <a href="https://www.instagram.com/swing_magazine_"  class="fa fa-instagram" ></a>
+            <a href="https://www.youtube.com/channel/UC_JsWXAMIP69-TdvfdaUDpA" class="fa fa-youtube" ></a>
+           <a href="mailto:contact.swingmagazine@gmail.com" class="fa fa-envelope"></a>
+          </div>
+          
+      
+        <div class="row">
+          <div class="col-sm-3">
+            <p><strong>HAIR</strong></p><br>
+            <img src="assets/images/cosmo.png" class="img-circle person"  href="hair.html">
+          </div>
+          <div class="col-sm-3">
+            <p><strong>FACE</strong></p><br>
+            <img src="assets/images/makeup.png" class="img-circle person" href="face.html" >
+          </div>
+          <div class="col-sm-3">
+            <p><strong>NAILS</strong></p><br>
+            <img src="assets/images/nails.png" class="img-circle person" href="nails.html">
+          </div>
+          <div class="col-sm-3">
+              <p><strong>BARBER</strong></p><br>
+              <img src="assets/images/barber.png" class="img-circle person" href="hair.html">
+            </div>
+        </div>
+      </div>
+
                
       <div id="myModal" class="modal">
           
@@ -132,7 +220,7 @@
             <div class="row">
                 
               <div class="column video" id="video-div">
-                <video id="videooo" width=100% controls autoplay>
+                <video id="videooo" width=100% loop autoplay>
                     <source src="assets/videos/SwinmagazineGold.mp4" type="video/mp4">
                 </video>
               </div>
@@ -157,7 +245,7 @@
       </div>
 
       
-
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
