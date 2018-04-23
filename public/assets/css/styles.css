@@ -20,11 +20,11 @@ body
 
 #message
 {
-    background: white;
+    background: #cec396;
     max-width: 360px;
     margin: 50px auto 16px;
     padding: 32px 24px;
-    border-radius: 3px;
+  
 }
 /*
 #message h3{
@@ -404,5 +404,16 @@ input {
     text-align: center;
     display: inline-block;
     font-size: 12px;
+}
+
+.form-subscribe{
+    
+    width: 100%; 
+    color:white;
+    padding: 10px;
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    display: inline-block;
+    
 }
 
