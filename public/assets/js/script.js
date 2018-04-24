@@ -90,10 +90,10 @@ function sendEmail(){
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
     var x = document.getElementById("myTopnav");
-    if (x.className === "nav-pills") {
+    if (x.className === "nav-pills navbar-fixed-top") {
         x.className += " responsive";
     } else {
-        x.className = "nav-pills";
+        x.className = "nav-pills navbar-fixed-top";
     }
 }
 
@@ -106,7 +106,11 @@ function stopVideo() {
  }
 
 function closeModal() {
-  document.getElementById('myModal').style.display = "none";
+    document.getElementById('myModal').style.display = "none";
+    var x = document.getElementById("myTopnav");
+//    x.className = "nav-pills navbar-fixed-top";
+            
+
 }
 
 var slideIndex = 1;
