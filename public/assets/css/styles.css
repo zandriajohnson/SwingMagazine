@@ -169,7 +169,7 @@ ul {
 }
 
 @media screen and (max-width: 600px) {
-  .nav-pills.responsive {position: relative;}
+  .nav-pills.responsive {position: relative; position: sticky;}
   .nav-pills.responsive .icon {
     position: absolute;
     right: 0;
